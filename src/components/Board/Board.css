@@ -1,0 +1,66 @@
+.board {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: var(--bg-canvas);
+  position: relative;
+}
+
+/* Cluster labels — positioned in canvas space */
+.board__cluster-labels {
+  position: absolute;
+  top: 0; left: 0;
+  width: 0; height: 0;
+  pointer-events: none;
+  z-index: 10;
+}
+.board__cluster-label {
+  position: absolute;
+  transform: translate(-50%, 0);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border: 1px solid;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.7);
+  backdrop-filter: blur(4px);
+  white-space: nowrap;
+}
+
+/* Zoom controls */
+.board__zoom-controls {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  background: rgba(255,255,255,0.92);
+  backdrop-filter: blur(12px);
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1), 0 0 0 1px rgba(0,0,0,0.06);
+  padding: 4px 6px;
+  z-index: 100;
+}
+.board__zoom-controls button {
+  width: 28px; height: 28px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text-primary);
+  display: flex; align-items: center; justify-content: center;
+  transition: background 0.1s;
+  border: none; cursor: pointer; background: none;
+}
+.board__zoom-controls button:hover { background: rgba(0,0,0,0.06); }
+.board__zoom-controls span {
+  font-size: 11px;
+  color: var(--text-secondary);
+  min-width: 38px;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+.board__zoom-reset { font-size: 14px !important; }

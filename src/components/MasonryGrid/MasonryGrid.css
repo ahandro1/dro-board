@@ -1,0 +1,60 @@
+.masonry-zoom-wrap {
+  transition: transform 0.2s var(--ease-out);
+  /* When scaled down, page shrinks accordingly */
+  transform-origin: top center;
+}
+
+/* ─── Group ─── */
+.masonry-group { width: 100%; }
+
+.masonry-group-spaced {
+  margin-bottom: 48px;
+}
+
+.masonry-group-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 0 var(--gap) 12px;
+  margin-top: 8px;
+}
+
+.masonry-group-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* ─── Masonry grid ─── */
+.masonry-grid {
+  display: flex;
+  width: 100%;
+  gap: var(--gap);
+}
+
+.masonry-col {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+}
+
+/* ─── Item ─── */
+.masonry-item {
+  width: 100%;
+  break-inside: avoid;
+}
+
+/* ─── Empty state ─── */
+.masonry-empty {
+  width: 100%;
+  padding: 80px 24px;
+  text-align: center;
+  color: var(--text-placeholder);
+  font-size: 14px;
+}

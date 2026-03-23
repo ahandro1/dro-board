@@ -1,0 +1,151 @@
+{
+  "settings": {
+    "siteTitle": "Dro's Board",
+    "passwordEnabled": false,
+    "passwordHash": "",
+    "googleApiKey": "",
+    "driveSyncSources": [],
+    "githubRepo": "ahandro1/Dro-s-Board",
+    "githubBranch": "main"
+  },
+  "tags": [
+    { "id": "tag_1", "name": "Inspiration", "color": "#A78BFA" },
+    { "id": "tag_2", "name": "Architecture", "color": "#34D399" },
+    { "id": "tag_3", "name": "Music", "color": "#F472B6" },
+    { "id": "tag_4", "name": "Art", "color": "#FB923C" }
+  ],
+  "items": [
+    {
+      "id": "item_1",
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600",
+      "title": "Mountain Light",
+      "note": "The way the light hits here",
+      "tags": ["tag_1"],
+      "dateAdded": "2026-03-01",
+      "scale": 1,
+      "pinned": false
+    },
+    {
+      "id": "item_2",
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1518998053901-5348d3961a04?w=600",
+      "title": "Spiral Staircase",
+      "note": "",
+      "tags": ["tag_2"],
+      "dateAdded": "2026-03-05",
+      "scale": 1,
+      "pinned": false
+    },
+    {
+      "id": "item_3",
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600",
+      "title": "",
+      "note": "",
+      "tags": ["tag_1", "tag_4"],
+      "dateAdded": "2026-03-08",
+      "scale": 1,
+      "pinned": false
+    },
+    {
+      "id": "item_4",
+      "type": "youtube",
+      "url": "https://www.youtube.com/watch?v=ScMzIvxBSi4",
+      "title": "Sample YouTube",
+      "note": "",
+      "tags": ["tag_3"],
+      "dateAdded": "2026-03-10",
+      "scale": 1,
+      "pinned": false
+    },
+    {
+      "id": "item_5",
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?w=600",
+      "title": "Forest Path",
+      "note": "",
+      "tags": ["tag_1"],
+      "dateAdded": "2026-03-12",
+      "scale": 1,
+      "pinned": false
+    },
+    {
+      "id": "item_6",
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=600",
+      "title": "Glass Building",
+      "note": "Reflections and geometry",
+      "tags": ["tag_2"],
+      "dateAdded": "2026-03-14",
+      "scale": 1,
+      "pinned": false
+    },
+    {
+      "id": "item_7",
+      "type": "spotify",
+      "url": "https://open.spotify.com/track/4cOdK2wGLETKBW3PvgPWqT",
+      "title": "Sample Track",
+      "note": "",
+      "tags": ["tag_3"],
+      "dateAdded": "2026-03-16",
+      "scale": 1,
+      "pinned": false
+    },
+    {
+      "id": "item_8",
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=600",
+      "title": "",
+      "note": "",
+      "tags": ["tag_4"],
+      "dateAdded": "2026-03-18",
+      "scale": 1,
+      "pinned": false
+    },
+    {
+      "id": "item_9",
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600",
+      "title": "Portrait Study",
+      "note": "",
+      "tags": ["tag_4"],
+      "dateAdded": "2026-03-19",
+      "scale": 1,
+      "pinned": false
+    },
+    {
+      "id": "item_10",
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?w=600",
+      "title": "Light Through Trees",
+      "note": "",
+      "tags": ["tag_1"],
+      "dateAdded": "2026-03-20",
+      "scale": 1,
+      "pinned": false
+    },
+    {
+      "id": "item_11",
+      "type": "text",
+      "url": "",
+      "title": "Welcome to Dro's Board",
+      "note": "A living moodboard — everything I find interesting, all in one place.",
+      "tags": [],
+      "dateAdded": "2026-03-21",
+      "scale": 1,
+      "pinned": false
+    },
+    {
+      "id": "item_12",
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600",
+      "title": "Interior Space",
+      "note": "",
+      "tags": ["tag_2"],
+      "dateAdded": "2026-03-23",
+      "scale": 1,
+      "pinned": false
+    }
+  ]
+}

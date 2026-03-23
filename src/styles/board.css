@@ -1,0 +1,23 @@
+.board {
+  min-height: 100vh;
+  background: var(--bg);
+}
+
+.board-content {
+  padding-top: var(--topbar-height);
+}
+
+.board-grid-wrap {
+  padding: var(--gap);
+  /* Extra padding for the zoom container so content doesn't clip */
+  padding-bottom: 60px;
+}
+
+.board-loading {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: var(--text-secondary);
+}
