@@ -25,10 +25,20 @@ export default function App() {
   if (loading) return <div className="board-loading">Loading…</div>
   if (error) return <div className="board-loading">Error: {error}</div>
 
+  const adminUnlocked = sessionStorage.getItem('drosboard_admin_unlocked')
+
   return (
     <Routes>
       <Route path="/" element={<BoardWrapper data={data} setData={setData} />} />
-      <Route path="/admin" element={<Admin data={data} setData={setData} />} />
+      <Route path="/admin" element={
+        adminUnlocked
+          ? <Admin data={data} setData={setData} />
+          : <PasswordGate
+              hash="6d5ef1fdb68c5ab10b7c90f1796f711153c1134f75c778280bc67b1bf1d3e21c"
+              storageKey="drosboard_admin_unlocked"
+              onUnlock={() => window.location.reload()}
+            />
+      } />
     </Routes>
   )
 }

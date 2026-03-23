@@ -7,7 +7,7 @@ async function hashPassword(pw) {
   return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2,'0')).join('')
 }
 
-export default function PasswordGate({ hash, onUnlock }) {
+export default function PasswordGate({ hash, onUnlock, storageKey = 'drosboard_unlocked' }) {
   const [pw, setPw] = useState('')
   const [error, setError] = useState(false)
   const [checking, setChecking] = useState(false)
@@ -18,7 +18,7 @@ export default function PasswordGate({ hash, onUnlock }) {
     setError(false)
     const h = await hashPassword(pw)
     if (h === hash) {
-      sessionStorage.setItem('drosboard_unlocked', '1')
+      sessionStorage.setItem(storageKey, '1')
       onUnlock()
     } else {
       setError(true)
